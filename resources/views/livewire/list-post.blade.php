@@ -10,6 +10,11 @@
                     class="bg-gray-500 p-2 text-white rounded-sm hover:bg-gray-400">
                     Edit
                 </button>
+                <button
+                wire:click="deletePost({{ $post->id }})" 
+                class="bg-red-500 p-2 text-white hover:bg-red-400 rounded-sm">
+                    Delete
+                </button>
             </div>
             <div>
                 @if ($updateSteteId !== $post->id)
