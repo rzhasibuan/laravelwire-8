@@ -1,11 +1,11 @@
 <div class="p-4">
     {{-- Do your work, then step back. --}}
-    {{ $body }}
+    {{-- {{ $body }} --}}
     <textarea 
     wire:model="body" 
     rows="3" 
     class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" 
-    placeholder="enter your post here..."></textarea>
+    placeholder="What are you thinking..."></textarea>
     <div class="flex justify-start">
         <button
         wire:click="createPost"

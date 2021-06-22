@@ -37,4 +37,10 @@ class ListPost extends Component
         // berfungsi agar state datanya tertutup kembali kerna bernilai angka 0
         $this->updateSteteId = 0;
     }
+
+    public function deletePost($postId)
+    {
+        $post = Post::find($postId);
+        $post->delete();
+    }
 }
