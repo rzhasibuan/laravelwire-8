@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Post;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class ListPost extends Component
@@ -13,12 +14,15 @@ class ListPost extends Component
 
     public $updateSteteId = 0;
     public $body = '';
+    public $warna = "blue";
 
     public function render()
     {
         return view('livewire.list-post',[
             'posts' => Post::latest()->get(),
+            'users' => Auth(),
         ]);
+        // dd($this->warna = "merah");
     }
 
     public function showUpdateForm($postId)
