@@ -9,6 +9,6 @@
     <div class="flex justify-start">
         <button
         wire:click="createPost"
-        class="px-4 py-2 m-1 bg-blue-600 text-white hover:bg-blue-500 rounded-md">Post</button>
+        class="px-4 py-2 m-1 bg-blue-600 text-white hover:bg-blue-500 rounded-md">Post it</button>
     </div>
 </div>
